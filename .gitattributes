@@ -1,0 +1,14 @@
+# Normalisation des fins de ligne.
+#
+# Ce depot est un MIROIR : ses pages doivent rester identiques au caractere pres
+# a leur source dans le depot prive de l'application, et le README documente un
+# `diff` comme moyen de le verifier.
+#
+# Sans cette regle, `core.autocrlf=true` (le defaut sur Windows) convertit la
+# copie de travail en CRLF au premier checkout, alors que la source, elle, reste
+# en LF grace au .gitattributes du depot de l'app. Le `diff` signale alors TOUTES
+# les lignes comme differentes pour un contenu strictement identique, et la
+# verification documentee devient inutilisable.
+#
+# On force donc LF dans la copie de travail, comme cote source.
+* text=auto eol=lf
