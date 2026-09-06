@@ -7,8 +7,19 @@
   requete reseau, nouveau stockage) doit se refleter ici dans le meme commit.
 
   PUBLICATION : la Play Console exige une URL publique. Le depot de l'app etant prive, GitHub Pages
-  n'est pas disponible dessus avec l'offre GitHub Free - voir PLANNING.md, tache B2. Republier ce
-  fichier apres chaque modification, sinon l'URL publique diverge du code.
+  n'est pas disponible dessus avec l'offre GitHub Free - voir PLANNING.md, tache B2.
+
+  QUAND REPUBLIER - precise le 3 septembre 2026, la formulation precedente ("apres chaque
+  modification") etant trompeuse. L'URL publique doit decrire la version que les utilisateurs ONT
+  REELLEMENT INSTALLEE, pas celle en cours de developpement. Donc :
+
+    - ce fichier suit 'develop' et se met a jour DANS LE MEME COMMIT que le code ;
+    - la copie publique, elle, se republie AU MOMENT OU LA VERSION CONCERNEE EST DEPLOYEE.
+
+  Les deux sens d'ecart ne se valent pas. SOUS-decrire (l'app traite une donnee que la politique
+  tait) est un manquement. SUR-decrire (annoncer un ecran de consentement que la version installee
+  n'affiche pas) n'est pas un manquement mais reste faux, et sans aucun benefice : rien n'oblige a
+  publier en avance.
 
   Page volontairement autonome : aucune police, feuille de style ni script externe.
 -->
@@ -16,7 +27,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dirham Rial — Politique de confidentialité / Privacy Policy / سياسة الخصوصية</title>
+<title>Dirham Rial — Politique de confidentialité / Privacy Policy / سياسة الخصوصية / Privacybeleid</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -51,13 +62,14 @@
   <a href="#fr">Français</a>
   <a href="#en">English</a>
   <a href="#ar">العربية</a>
+  <a href="#nl">Nederlands</a>
 </nav>
 
 <!-- ============================== FRANÇAIS ============================== -->
 <section id="fr" lang="fr">
 
 <h1>Politique de confidentialité — Dirham Rial</h1>
-<p class="meta">Éditeur : Idmoussapp Studio · Version 1.0.0 · Dernière mise à jour : 5 août 2026</p>
+<p class="meta">Éditeur : Idmoussapp Studio · Version 1.1.0 · Dernière mise à jour : 3 septembre 2026</p>
 
 <p>
   <strong>Dirham Rial</strong> est une application de conversion entre le dirham marocain (MAD), le
@@ -80,7 +92,10 @@
 <ul>
   <li>l'historique de vos cinq dernières conversions ;</li>
   <li>le dernier taux de change connu et sa date, pour un fonctionnement hors ligne ;</li>
-  <li>un indicateur signalant si la version sans publicité a été achetée.</li>
+  <li>un indicateur signalant si la version sans publicité a été achetée ;</li>
+  <li>vos <strong>choix de consentement publicitaire</strong>, enregistrés par le module de
+      consentement de Google afin de ne pas vous redemander la même chose à chaque lancement
+      (voir le point 4).</li>
 </ul>
 <p>
   Ces informations <strong>ne quittent jamais votre téléphone</strong> : elles ne sont ni
@@ -132,6 +147,30 @@
   varie selon le constructeur).
 </p>
 
+<h2>4 bis. Votre consentement publicitaire</h2>
+<p>
+  Si vous vous trouvez dans l'<strong>Espace économique européen</strong>, au
+  <strong>Royaume-Uni</strong> ou en <strong>Suisse</strong>, l'application vous présente un
+  <strong>écran de consentement</strong> avant toute diffusion de publicité. Il est fourni par la
+  plateforme de gestion du consentement de Google (<em>User Messaging Platform</em>), intégrée à
+  l'application.
+</p>
+<ul>
+  <li>Tant que vous n'avez pas répondu, <strong>aucune publicité n'est demandée</strong> et le
+      module publicitaire de Google <strong>n'est pas initialisé</strong>.</li>
+  <li>Pour afficher cet écran et enregistrer votre réponse, le module interroge les serveurs de
+      Google. Cette requête ne transmet <strong>aucune donnée d'identification personnelle</strong>
+      fournie par l'application ; comme toute connexion, elle expose techniquement votre adresse
+      IP, dont Google déduit le pays afin de savoir quelle réglementation s'applique.</li>
+  <li>Votre réponse est <strong>conservée sur votre appareil</strong> pour ne pas vous être
+      redemandée à chaque lancement.</li>
+</ul>
+<p>
+  <strong>Vous pouvez revenir sur votre choix à tout moment.</strong> Lorsque la réglementation
+  applicable l'exige, l'application affiche un lien <em>Publicités</em> en bas de l'écran, qui
+  rouvre l'écran de consentement et permet de modifier ou de retirer votre accord.
+</p>
+
 <h2>5. Achats intégrés</h2>
 <p>
   La version 1.0.0 <strong>ne propose aucun achat</strong>. Si une option payante est ajoutée
@@ -174,7 +213,7 @@
 <section id="en" lang="en">
 
 <h1>Privacy Policy — Dirham Rial</h1>
-<p class="meta">Publisher: Idmoussapp Studio · Version 1.0.0 · Last updated: 5 August 2026</p>
+<p class="meta">Publisher: Idmoussapp Studio · Version 1.1.0 · Last updated: 3 September 2026</p>
 
 <p>
   <strong>Dirham Rial</strong> is a converter between the Moroccan dirham (MAD), the Moroccan rial
@@ -194,7 +233,9 @@
 <ul>
   <li>your last five conversions;</li>
   <li>the most recent known exchange rate and its date, to work offline;</li>
-  <li>a flag recording whether the ad-free version has been purchased.</li>
+  <li>a flag recording whether the ad-free version has been purchased;</li>
+  <li>your <strong>advertising consent choices</strong>, saved by Google's consent module so that
+      you are not asked the same question on every launch (see section 4).</li>
 </ul>
 <p>
   This information <strong>never leaves your phone</strong>: it is not transmitted, not backed up to
@@ -242,6 +283,29 @@
   path varies by manufacturer).
 </p>
 
+<h2>4b. Your advertising consent</h2>
+<p>
+  If you are located in the <strong>European Economic Area</strong>, the <strong>United
+  Kingdom</strong> or <strong>Switzerland</strong>, the app shows you a <strong>consent
+  screen</strong> before any advertising is served. It is provided by Google's consent management
+  platform (<em>User Messaging Platform</em>), which is built into the app.
+</p>
+<ul>
+  <li>Until you have answered, <strong>no ad is requested</strong> and Google's advertising module
+      <strong>is not initialised</strong>.</li>
+  <li>To display that screen and record your answer, the module contacts Google's servers. This
+      request carries <strong>no personal identifying data</strong> supplied by the app; as with any
+      connection it technically exposes your IP address, from which Google infers the country in
+      order to determine which regulation applies.</li>
+  <li>Your answer is <strong>stored on your device</strong> so that you are not asked again on every
+      launch.</li>
+</ul>
+<p>
+  <strong>You can change your mind at any time.</strong> Where the applicable regulation requires
+  it, the app shows an <em>Ad Settings</em> link at the bottom of the screen, which reopens the
+  consent screen and lets you change or withdraw your agreement.
+</p>
+
 <h2>5. In-app purchases</h2>
 <p>
   Version 1.0.0 <strong>offers no purchase</strong>. Should a paid option be added later, the
@@ -284,7 +348,7 @@
 <section id="ar" lang="ar" dir="rtl">
 
 <h1>سياسة الخصوصية — درهم ريال</h1>
-<p class="meta">الناشر: Idmoussapp Studio · الإصدار 1.0.0 · آخر تحديث: 5 غشت 2026</p>
+<p class="meta">الناشر: Idmoussapp Studio · الإصدار 1.1.0 · آخر تحديث: 3 شتنبر 2026</p>
 
 <p>
   <strong>درهم ريال</strong> تطبيق لتحويل العملات بين الدرهم المغربي (MAD) والريال المغربي واليورو
@@ -304,7 +368,9 @@
 <ul>
   <li>سجل آخر خمس عمليات تحويل قمت بها؛</li>
   <li>آخر سعر صرف معروف وتاريخه، لتشغيل التطبيق دون اتصال بالإنترنت؛</li>
-  <li>مؤشّر يبيّن ما إذا تم شراء النسخة الخالية من الإعلانات.</li>
+  <li>مؤشّر يبيّن ما إذا تم شراء النسخة الخالية من الإعلانات؛</li>
+  <li><strong>اختياراتك بشأن الموافقة على الإعلانات</strong>، تحفظها أداة الموافقة من Google حتى لا
+      يُطرح عليك السؤال نفسه عند كل تشغيل (انظر البند 4).</li>
 </ul>
 <p>
   هذه المعلومات <strong>لا تغادر هاتفك أبدًا</strong>: لا تُرسَل، ولا تُحفَظ على أي خادم، ولا يمكن
@@ -352,6 +418,24 @@
   الدقيق حسب الشركة المصنّعة).
 </p>
 
+<h2>4 مكرر. موافقتك على الإعلانات</h2>
+<p>
+  إذا كنت داخل <strong>المنطقة الاقتصادية الأوروبية</strong> أو في <strong>المملكة المتحدة</strong>
+  أو <strong>سويسرا</strong>، يعرض عليك التطبيق <strong>شاشة موافقة</strong> قبل عرض أي إعلان.
+  توفّرها منصّة إدارة الموافقة من Google (<em>User Messaging Platform</em>) المدمجة في التطبيق.
+</p>
+<ul>
+  <li>ما دمت لم تُجب، <strong>لا يُطلب أي إعلان</strong> ولا تُشغَّل وحدة الإعلانات من Google.</li>
+  <li>لعرض هذه الشاشة وتسجيل إجابتك، تتّصل الوحدة بخوادم Google. لا ينقل هذا الطلب
+      <strong>أي بيانات تعريف شخصية</strong> من التطبيق؛ وكأي اتصال، فهو يكشف تقنيًا عنوان IP
+      الخاص بك، وتستنتج منه Google البلد لتحديد التشريع المنطبق.</li>
+  <li>تُحفَظ إجابتك <strong>على جهازك</strong> حتى لا يُطرح عليك السؤال عند كل تشغيل.</li>
+</ul>
+<p>
+  <strong>يمكنك تغيير اختيارك في أي وقت.</strong> عندما يقتضي التشريع المنطبق ذلك، يعرض التطبيق
+  رابط <em>الإعلانات</em> أسفل الشاشة، يعيد فتح شاشة الموافقة ويتيح لك تعديل موافقتك أو سحبها.
+</p>
+
 <h2>5. عمليات الشراء داخل التطبيق</h2>
 <p>
   لا يوفّر الإصدار 1.0.0 <strong>أي عملية شراء</strong>. وإذا أُضيف خيار مدفوع لاحقًا، فستتولّى
@@ -381,6 +465,145 @@
 <h2>9. التواصل</h2>
 <p>
   لأي سؤال بخصوص هذه السياسة أو بياناتك:
+  <a href="mailto:idmoussapp.studio@gmail.com">idmoussapp.studio@gmail.com</a>
+</p>
+
+</section>
+
+<hr>
+
+<!-- ============================== NEDERLANDS ============================== -->
+<section id="nl" lang="nl">
+
+<h1>Privacybeleid — Dirham Rial</h1>
+<p class="meta">Uitgever: Idmoussapp Studio · Versie 1.1.0 · Laatst bijgewerkt: 3 september 2026</p>
+
+<p>
+  <strong>Dirham Rial</strong> is een app om om te rekenen tussen de Marokkaanse dirham (MAD), de
+  Marokkaanse rial en de euro (EUR). Deze pagina beschrijft welke gegevens de app verwerkt, welke
+  niet, en wat de diensten van derden doen waarvan de app gebruikmaakt.
+</p>
+
+<h2>1. Geen account, geen identificerende gegevens</h2>
+<p>
+  De app vraagt <strong>geen registratie</strong> en verzamelt <strong>geen persoonlijk
+  identificerende gegevens</strong>: geen naam, e-mailadres, telefoonnummer, contacten, foto's of
+  gps-locatie. Er wordt geen gevoelige Android-machtiging gevraagd.
+</p>
+
+<h2>2. Gegevens die op uw toestel worden bewaard</h2>
+<p>De app bewaart lokaal, en uitsluitend op uw toestel:</p>
+<ul>
+  <li>uw laatste vijf omrekeningen;</li>
+  <li>de laatst bekende wisselkoers en de datum ervan, om offline te kunnen werken;</li>
+  <li>een indicator die aangeeft of de advertentievrije versie is gekocht;</li>
+  <li>uw <strong>keuzes rond advertentietoestemming</strong>, opgeslagen door de toestemmingsmodule
+      van Google zodat dezelfde vraag niet bij elke start opnieuw wordt gesteld (zie punt 4).</li>
+</ul>
+<p>
+  Deze informatie <strong>verlaat uw telefoon nooit</strong>: ze wordt niet verzonden, niet op een
+  server bewaard en is niet toegankelijk voor de uitgever. Het verwijderen van de app wist ze
+  definitief. U kunt ze ook op elk moment wissen via <em>Instellingen → Apps → Dirham Rial →
+  Opslag → Gegevens wissen</em>.
+</p>
+
+<h2>3. Netwerkverbinding: de wisselkoers</h2>
+<p>
+  Om de koers euro / dirham bij te werken, raadpleegt de app een gratis openbare
+  wisselkoersdataset die wordt geleverd via het <strong>jsDelivr</strong>-netwerk
+  (<code>cdn.jsdelivr.net</code>). Dit verzoek bevat <strong>geen persoonsgegevens</strong> en geen
+  enkele identificator: het vraagt alleen de koers van de dag op.
+</p>
+<p>
+  Zoals bij elke internetverbinding ontvangt de gecontacteerde server technisch gezien uw
+  IP-adres. Dit wordt door de uitgever van de app niet verzameld of bewaard.
+</p>
+
+<h2>4. Advertenties: Google AdMob</h2>
+<p>
+  De app toont een advertentiebanner van <strong>Google AdMob</strong>. Die dienst wordt beheerd
+  door Google, dat optreedt als advertentiepartner en in dat kader het volgende kan verzamelen en
+  verwerken:
+</p>
+<ul>
+  <li>de <strong>advertentie-id</strong> van uw toestel;</li>
+  <li>uw <strong>IP-adres</strong> en een daaruit afgeleide globale locatie;</li>
+  <li>technische informatie over het toestel (model, besturingssysteem, taal);</li>
+  <li><strong>technische prestatiegegevens</strong> van de advertentiemodule (laadtijden, fouten,
+      correcte werking van de SDK);</li>
+  <li>uw interacties met de getoonde advertenties.</li>
+</ul>
+<p>
+  Google gebruikt deze gegevens voor het <strong>weergeven en meten van advertenties</strong>,
+  <strong>statistische analyse</strong> en <strong>fraudepreventie</strong>.
+</p>
+<p>
+  Deze gegevens worden verzameld <strong>door Google, niet door de uitgever van de app</strong>,
+  die er geen individuele toegang toe heeft. De verwerking valt onder het
+  <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">privacybeleid van
+  Google voor partnersites en -apps</a>.
+</p>
+<p>
+  U houdt de controle: met Android kunt u uw <strong>advertentie-id opnieuw instellen of
+  verwijderen</strong> en gepersonaliseerde advertenties uitschakelen, via <em>Instellingen →
+  Beveiliging en privacy → Privacy → Advertenties</em> (het exacte pad verschilt per fabrikant).
+</p>
+
+<h2>4bis. Uw toestemming voor advertenties</h2>
+<p>
+  Bevindt u zich in de <strong>Europese Economische Ruimte</strong>, het <strong>Verenigd
+  Koninkrijk</strong> of <strong>Zwitserland</strong>, dan toont de app u een
+  <strong>toestemmingsscherm</strong> voordat er advertenties worden weergegeven. Het wordt
+  geleverd door het toestemmingsplatform van Google (<em>User Messaging Platform</em>), dat in de
+  app is ingebouwd.
+</p>
+<ul>
+  <li>Zolang u niet hebt geantwoord, wordt er <strong>geen advertentie opgevraagd</strong> en wordt
+      de advertentiemodule van Google <strong>niet geïnitialiseerd</strong>.</li>
+  <li>Om dat scherm te tonen en uw antwoord vast te leggen, neemt de module contact op met de
+      servers van Google. Dit verzoek verzendt <strong>geen persoonlijk identificerende
+      gegevens</strong> vanuit de app; zoals bij elke verbinding wordt uw IP-adres technisch
+      zichtbaar, waaruit Google het land afleidt om te bepalen welke regelgeving van toepassing is.</li>
+  <li>Uw antwoord wordt <strong>op uw toestel bewaard</strong> zodat de vraag niet bij elke start
+      opnieuw wordt gesteld.</li>
+</ul>
+<p>
+  <strong>U kunt uw keuze op elk moment herzien.</strong> Wanneer de toepasselijke regelgeving dat
+  vereist, toont de app onderaan het scherm een link <em>Advertenties</em> die het
+  toestemmingsscherm opnieuw opent en waarmee u uw toestemming kunt wijzigen of intrekken.
+</p>
+
+<h2>5. In-app-aankopen</h2>
+<p>
+  Versie 1.0.0 <strong>biedt geen aankoop</strong>. Mocht er later een betaalde optie worden
+  toegevoegd, dan wordt de transactie volledig door <strong>Google Play</strong> afgehandeld: de
+  app krijgt uw betaalgegevens nooit te zien, ontvangt ze niet en bewaart ze niet.
+</p>
+
+<h2>6. Wat de app niet doet</h2>
+<ul>
+  <li>Geen <strong>verkoop</strong> of <strong>verhuur</strong> van gegevens aan wie dan ook.</li>
+  <li>Geen <strong>analysetool</strong> of <strong>crashrapportage</strong> geïnstalleerd door de
+      uitgever: de enige technische gegevens die worden verzonden zijn die van de
+      advertentiemodule, beschreven in punt 4.</li>
+  <li>Geen <strong>tracking</strong> van uw activiteit buiten de app.</li>
+</ul>
+
+<h2>7. Kinderen</h2>
+<p>
+  De app is <strong>niet bedoeld voor kinderen</strong> en richt zich niet tot hen. Er worden niet
+  bewust gegevens over minderjarigen verzameld.
+</p>
+
+<h2>8. Wijzigingen</h2>
+<p>
+  Dit beleid kan wijzigen naarmate de app evolueert. De datum van de laatste bijwerking staat
+  bovenaan deze pagina; belangrijke wijzigingen worden vermeld in de release-opmerkingen.
+</p>
+
+<h2>9. Contact</h2>
+<p>
+  Voor vragen over dit beleid of uw gegevens:
   <a href="mailto:idmoussapp.studio@gmail.com">idmoussapp.studio@gmail.com</a>
 </p>
 

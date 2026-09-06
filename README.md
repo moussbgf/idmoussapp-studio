@@ -26,18 +26,33 @@ Ici, ce n'est qu'un miroir. **Les fichiers doivent rester rigoureusement identiq
 
 Republier après toute modification de la source :
 
+⚠️ **Le dépôt privé n'est pas au même endroit sur les deux postes** — les commandes ci-dessous
+étaient écrites pour le seul PC portable et échouaient en silence sur le PC fixe. Définir `APP` une
+fois, selon la machine :
+
 ```bash
-cp /c/projets/app/dirhamrialmarocaineuro/docs/privacy/index.html /c/projets/idmoussapp-studio/dirham-rial/index.html
+APP=/c/projets/app/dirhamrialmarocaineuro                      # PC portable
+APP=/c/Users/mstaf/AndroidStudioProjects/dirhamrialmarocaineuro # PC fixe
+```
+
+Republier :
+
+```bash
+cp "$APP/docs/privacy/index.html" /c/projets/idmoussapp-studio/dirham-rial/index.html
 ```
 
 Vérifier que les deux sont en phase — aucune sortie signifie qu'ils sont identiques :
 
 ```bash
-diff /c/projets/app/dirhamrialmarocaineuro/docs/privacy/index.html /c/projets/idmoussapp-studio/dirham-rial/index.html
+cmp "$APP/docs/privacy/index.html" /c/projets/idmoussapp-studio/dirham-rial/index.html
 ```
 
+📌 **`cmp` plutôt que `diff`** : il compare octet par octet et ne peut pas masquer un écart de fins
+de ligne, là où certains `diff` ignorent les retours chariot en fin de ligne. Sur un miroir qui doit
+être identique **au caractère près**, c'est la seule vérification qui ne mente pas.
+
 C'est aussi la raison pour laquelle la copie ne porte **aucune mention** signalant qu'elle est une
-copie : le moindre écart volontaire rendrait ce `diff` inutilisable.
+copie : le moindre écart volontaire rendrait cette vérification inutilisable.
 
 ## Ajouter une application
 
