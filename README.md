@@ -13,6 +13,7 @@ dépôt public séparé, qui ne contient aucun code.
 | Chemin | URL publique | Source de vérité |
 |---|---|---|
 | `dirham-rial/index.html` | <https://moussbgf.github.io/idmoussapp-studio/dirham-rial/> | `docs/privacy/index.html` du dépôt privé `dirhamrialmarocaineuro` |
+| `next-token/index.html` | <https://moussbgf.github.io/idmoussapp-studio/next-token/> | `docs/publication/politique-de-confidentialite.html` du dépôt privé `NextToken` |
 
 ## ⚠️ Ce dépôt est une COPIE, pas la source
 
@@ -45,6 +46,14 @@ Vérifier que les deux sont en phase — aucune sortie signifie qu'ils sont iden
 
 ```bash
 cmp "$APP/docs/privacy/index.html" /c/projets/idmoussapp-studio/dirham-rial/index.html
+```
+
+Pour Next Token (chemin du PC fixe, à adapter sur une autre machine) :
+
+```bash
+NT=/c/Users/mstaf/AndroidStudioProjects/NextToken
+cp "$NT/docs/publication/politique-de-confidentialite.html" /c/projets/idmoussapp-studio/next-token/index.html
+cmp "$NT/docs/publication/politique-de-confidentialite.html" /c/projets/idmoussapp-studio/next-token/index.html
 ```
 
 📌 **`cmp` plutôt que `diff`** : il compare octet par octet et ne peut pas masquer un écart de fins
